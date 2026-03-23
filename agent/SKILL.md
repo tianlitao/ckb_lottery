@@ -8,6 +8,10 @@ version: 0.2.0
 
 A provably fair on-chain lottery on CKB blockchain. Bet on whether the last hex character of a future block hash is **BIG (8-F)** or **SMALL (0-7)**. Win rate 50%, payout 1.93x.
 
+## Demo
+
+![CKB Hash Lottery Agent demo](./demo.gif)
+
 ## Install
 
 ```bash
