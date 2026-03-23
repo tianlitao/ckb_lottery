@@ -1,0 +1,29 @@
+{
+  "private": true,
+  "name": "ckb-lottery-agent",
+  "version": "0.1.0",
+  "description": "CKB Hash Lottery Agent CLI - bet on block hash last nibble",
+  "type": "module",
+  "bin": {
+    "lottery": "./src/index.ts"
+  },
+  "scripts": {
+    "dev": "bun run src/index.ts",
+    "build": "bun build --target node --outfile bin/lottery.js src/index.ts",
+    "test": "bun test"
+  },
+  "keywords": ["ckb", "nervos", "lottery", "agent", "cli"],
+  "license": "MIT",
+  "dependencies": {
+    "@ckb-ccc/shell": "^1.1.25",
+    "@nervosnetwork/ckb-sdk-utils": "^0.109.3",
+    "commander": "^14.0.3",
+    "picocolors": "^1.1.1",
+    "ora": "^9.1.0",
+    "cli-table3": "^0.6.5"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5.9.3"
+  }
+}
